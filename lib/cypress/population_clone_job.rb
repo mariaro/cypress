@@ -81,9 +81,12 @@ end
       begin
         #record.first = APP_CONFIG["randomization"]["names"]["first"][record.gender].sample
         #record.last = APP_CONFIG["randomization"]["names"]["last"].sample
-        if (record.original_medical_record_number ==  "2678a4e396aaec03b860d5aeadcad8e6")
+        dup1 = false;
+        dup2 = false;
+        if (record.original_medical_record_number ==  "2678a4e396aaec03b860d5aeadcad8e6" && !dup2)
           record.first = "Jose"
           record.last = "Atkins"
+          dup2 = true;
         end
         if (record.original_medical_record_number ==  "bc8f60f4cbde3d6c28974971b6880792")
           record.first = "Virgil"
@@ -105,7 +108,7 @@ end
           record.first = "Kristina"
           record.last = "Rogers"
         end
-        if (record.original_medical_record_number ==  "2678a4e396aaec03b860d5aeadcad8e6")
+        if (record.original_medical_record_number ==  "2678a4e396aaec03b860d5aeadcad8e6" && dup2)
           record.first = "Gilbert"
           record.last = "Dean"
         end
@@ -117,11 +120,12 @@ end
           record.first = "Joe"
           record.last = "Lewis"
         end
-        if (record.original_medical_record_number ==  "511b530c8662f8df97eb97b3eefa0618")
+        if (record.original_medical_record_number ==  "511b530c8662f8df97eb97b3eefa0618" && !dup1)
           record.first = "Jennifer"
           record.last = "Jennings"
+          dup1 = true;
         end
-        if (record.original_medical_record_number ==  "511b530c8662f8df97eb97b3eefa0618")
+        if (record.original_medical_record_number ==  "511b530c8662f8df97eb97b3eefa0618" && dup1)
           record.first = "Stella"
           record.last = "Spencer"
         end
