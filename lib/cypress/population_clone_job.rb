@@ -78,11 +78,13 @@ end
     def randomize_name(record)
       @used_names ||= {}
       @used_names[record.gender] ||= []
+
+      dup1 = false;
+      dup2 = false;
+
       begin
         #record.first = APP_CONFIG["randomization"]["names"]["first"][record.gender].sample
         #record.last = APP_CONFIG["randomization"]["names"]["last"].sample
-        dup1 = false;
-        dup2 = false;
         if (record.original_medical_record_number ==  "2678a4e396aaec03b860d5aeadcad8e6" && !dup2)
           record.first = "Jose"
           record.last = "Atkins"
