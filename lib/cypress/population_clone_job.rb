@@ -21,9 +21,9 @@ module Cypress
       # Clone AMA records from Mongo
       @test = ProductTest.find(options["test_id"])
       patients=[]
-      File.open('/home/cypress/testfile', 'w') do |f|      
-        f.puts "test1"    
-        end     
+      File.open('/home/cypress/testfile', 'w') do |f|
+        f.puts "test1"
+        end
 isAmb = true
 #ambulatory
 if isAmb
@@ -51,11 +51,15 @@ random_records.each do |patient|
  patient.shift_dates(date_shift)
  patients << patient
 end
-end   
+end
 
-  
+
     @dup1 = false;
     @dup2 = false;
+    @dup3 = false;
+    @dup4 = false;
+    @dup5 = false;
+    @dup6 = false;
 
       patients.each do |patient|
         clone_and_save_record(patient)
@@ -207,19 +211,22 @@ end
           record.last = "Butler"
           return
         end
-        if (record.original_medical_record_number ==  "caf50e70e548d61d097c68e9001ded60")
+        if (record.original_medical_record_number ==  "caf50e70e548d61d097c68e9001ded60" && !@dup3)
           record.first = "Judy"
           record.last = "Carson"
+          @dup3 = true
           return
         end
-        if (record.original_medical_record_number ==  "b03719c7f99502b7990918baf4640f70")
+        if (record.original_medical_record_number ==  "b03719c7f99502b7990918baf4640f70" && !@dup4)
           record.first = "Phyllis"
           record.last = "Collier"
+          @dup4 = true
           return
         end
-        if (record.original_medical_record_number ==  "116c5a883ccdc89b2531bcbae3a403ab")
+        if (record.original_medical_record_number ==  "116c5a883ccdc89b2531bcbae3a403ab" && !@dup5)
           record.first = "Minnie"
           record.last = "Copeland"
+          @dup5 = true
           return
         end
         if (record.original_medical_record_number ==  "1ef57c0a5ac2ef5a2b50b3f4bb04d76c")
@@ -227,7 +234,7 @@ end
           record.last = "Floyd"
           return
         end
-        if (record.original_medical_record_number ==  "b03719c7f99502b7990918baf4640f70")
+        if (record.original_medical_record_number ==  "b03719c7f99502b7990918baf4640f70" && @dup4)
           record.first = "Crystal"
           record.last = "Griffin"
           return
@@ -242,19 +249,20 @@ end
           record.last = "Moran"
           return
         end
-        if (record.original_medical_record_number ==  "caf50e70e548d61d097c68e9001ded60")
+        if (record.original_medical_record_number ==  "caf50e70e548d61d097c68e9001ded60" && @dup3)
           record.first = "Beverly"
           record.last = "Patrick"
           return
         end
-        if (record.original_medical_record_number ==  "116c5a883ccdc89b2531bcbae3a403ab")
+        if (record.original_medical_record_number ==  "116c5a883ccdc89b2531bcbae3a403ab" && @dup5 )
           record.first = "Florence"
           record.last = "Poole"
           return
         end
-        if (record.original_medical_record_number ==  "879223b7a0d9fee24b76afac7e1ce268")
+        if (record.original_medical_record_number ==  "879223b7a0d9fee24b76afac7e1ce268" && !@dup6)
           record.first = "Donald"
           record.last = "Roberson"
+          @dup6 = true
           return
         end
         if (record.original_medical_record_number ==  "fed736f9b98e0a4bcc8e7401b20cf7a5")
@@ -267,7 +275,7 @@ end
           record.last = "Walton"
           return
         end
-        if (record.original_medical_record_number ==  "879223b7a0d9fee24b76afac7e1ce268")
+        if (record.original_medical_record_number ==  "879223b7a0d9fee24b76afac7e1ce268" &&  @dup6)
           record.first = "Fernando"
           record.last = "Ward"
           return
