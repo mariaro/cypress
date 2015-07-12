@@ -79,8 +79,156 @@ end
       @used_names ||= {}
       @used_names[record.gender] ||= []
       begin
-        record.first = APP_CONFIG["randomization"]["names"]["first"][record.gender].sample
-        record.last = APP_CONFIG["randomization"]["names"]["last"].sample
+        #record.first = APP_CONFIG["randomization"]["names"]["first"][record.gender].sample
+        #record.last = APP_CONFIG["randomization"]["names"]["last"].sample
+        if (record.original_medical_record_number ==  "2678a4e396aaec03b860d5aeadcad8e6")
+          record.first = "Jose"
+          record.last = "Atkins"
+        end
+        if (record.original_medical_record_number ==  "bc8f60f4cbde3d6c28974971b6880792")
+          record.first = "Virgil"
+          record.last = "Sandoval"
+        end
+        if (record.original_medical_record_number ==  "e05ff19bd33566173fd742d4b9831f1f")
+          record.first = "Anthony"
+          record.last = "Moody"
+        end
+        if (record.original_medical_record_number ==  "5f118631f09abdbdeb1962dc28bfeb27")
+          record.first = "Manuel"
+          record.last = "Clarke"
+        end
+        if (record.original_medical_record_number ==  "b54a4e3ab37de7e5f8094793afb8a699")
+          record.first = "Joan"
+          record.last = "Matthews"
+        end
+        if (record.original_medical_record_number ==  "d045df54952043573bb6a94c374c8420")
+          record.first = "Kristina"
+          record.last = "Rogers"
+        end
+        if (record.original_medical_record_number ==  "2678a4e396aaec03b860d5aeadcad8e6")
+          record.first = "Gilbert"
+          record.last = "Dean"
+        end
+        if (record.original_medical_record_number ==  "61aa020431420dce8f53b74352a990fe")
+          record.first = "Dianne"
+          record.last = "Holt"
+        end
+        if (record.original_medical_record_number ==  "91bd37f9cebf7b6ef9f72d7fd6148a81")
+          record.first = "Joe"
+          record.last = "Lewis"
+        end
+        if (record.original_medical_record_number ==  "511b530c8662f8df97eb97b3eefa0618")
+          record.first = "Jennifer"
+          record.last = "Jennings"
+        end
+        if (record.original_medical_record_number ==  "511b530c8662f8df97eb97b3eefa0618")
+          record.first = "Stella"
+          record.last = "Spencer"
+        end
+        if (record.original_medical_record_number ==  "470f57b022eaeffd4d599078e851a56d")
+          record.first = "Anthony"
+          record.last = "Gibson"
+        end
+        if (record.original_medical_record_number ==  "0dbaf9336f7aa1590265250a0eebe548")
+          record.first = "Caroline"
+          record.last = "Hill"
+        end
+        if (record.original_medical_record_number ==  "bd2d8e0fd774e32f623e1fe5ad44781f")
+          record.first = "Alberto"
+          record.last = "Howell"
+        end
+        if (record.original_medical_record_number ==  "88130abfa702d8f53ac7be76e9d24a58")
+          record.first = "Dianne"
+          record.last = "Kelley"
+        end
+        if (record.original_medical_record_number ==  "d156a6d38e10efc30eda3cace7456537")
+          record.first = "Helen"
+          record.last = "Jensen"
+        end
+        if (record.original_medical_record_number ==  "5407e0ea5126420644b503c66153eb3c")
+          record.first = "Sheila"
+          record.last = "Riley"
+        end
+        if (record.original_medical_record_number ==  "8130b2ff5774f1593c86eba8dca4c37b")
+          record.first = "Larry"
+          record.last = "Dixon"
+        end
+        if (record.original_medical_record_number ==  "258ee9087c5a5fe359ceb3aafff0dd76")
+          record.first = "Brent"
+          record.last = "Russell"
+        end
+        if (record.original_medical_record_number ==  "ce83c561f62e245ad4e0ca648e9de0dd")
+          record.first = "Edgar"
+          record.last = "Holmes"
+        end
+        if (record.original_medical_record_number ==  "f03f9bf5cc4bfa7298ae1a4804cc7e5f")
+          record.first = "Delores"
+          record.last = "Ballard"
+        end
+        if (record.original_medical_record_number ==  "c6bbb7342c4cf4ebeeaf1a417646db69")
+          record.first = "Becky"
+          record.last = "Brewer"
+        end
+        if (record.original_medical_record_number ==  "d7108ec0329f792ea437d5051c88a314")
+          record.first = "Clara"
+          record.last = "Burton"
+        end
+        if (record.original_medical_record_number ==  "649910f4a9da359b17d7c1b012decc17")
+          record.first = "Gail"
+          record.last = "Butler"
+        end
+        if (record.original_medical_record_number ==  "caf50e70e548d61d097c68e9001ded60")
+          record.first = "Judy"
+          record.last = "Carson"
+        end
+        if (record.original_medical_record_number ==  "b03719c7f99502b7990918baf4640f70")
+          record.first = "Phyllis"
+          record.last = "Collier"
+        end
+        if (record.original_medical_record_number ==  "116c5a883ccdc89b2531bcbae3a403ab")
+          record.first = "Minnie"
+          record.last = "Copeland"
+        end
+        if (record.original_medical_record_number ==  "1ef57c0a5ac2ef5a2b50b3f4bb04d76c")
+          record.first = "Amy"
+          record.last = "Floyd"
+        end
+        if (record.original_medical_record_number ==  "b03719c7f99502b7990918baf4640f70")
+          record.first = "Crystal"
+          record.last = "Griffin"
+        end
+        if (record.original_medical_record_number ==  "cce692bcfd3d4dc602a052190bb30d8b")
+          record.first = "Andy"
+          record.last = "Long"
+        end
+        if (record.original_medical_record_number ==  "86c61730a8776ec14e06b3ed08cad129")
+          record.first = "Erica"
+          record.last = "Moran"
+        end
+        if (record.original_medical_record_number ==  "caf50e70e548d61d097c68e9001ded60")
+          record.first = "Beverly"
+          record.last = "Patrick"
+        end
+        if (record.original_medical_record_number ==  "116c5a883ccdc89b2531bcbae3a403ab")
+          record.first = "Florence"
+          record.last = "Poole"
+        end
+        if (record.original_medical_record_number ==  "879223b7a0d9fee24b76afac7e1ce268")
+          record.first = "Donald"
+          record.last = "Roberson"
+        end
+        if (record.original_medical_record_number ==  "fed736f9b98e0a4bcc8e7401b20cf7a5")
+          record.first = "Jerry"
+          record.last = "Stanley"
+        end
+        if (record.original_medical_record_number ==  "e9f710b1f129c10bf69d3c29432e166f")
+          record.first = "Ellen"
+          record.last = "Walton"
+        end
+        if (record.original_medical_record_number ==  "879223b7a0d9fee24b76afac7e1ce268")
+          record.first = "Fernando"
+          record.last = "Ward"
+        end
       end while(@used_names[record.gender].find("#{record.first}-#{record.last}").nil?)
       @used_names[record.gender] << "#{record.first}-#{record.last}"
     end
