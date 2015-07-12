@@ -24,7 +24,7 @@ module Cypress
       File.open('/home/cypress/testfile', 'w') do |f|
         f.puts "test1"
         end
-isAmb = true
+isAmb = false
 #ambulatory
 if isAmb
  options['patient_ids'] = ["2678a4e396aaec03b860d5aeadcad8e6", "8130b2ff5774f1593c86eba8dca4c37b", "470f57b022eaeffd4d599078e851a56d", "0dbaf9336f7aa1590265250a0eebe548", "ce83c561f62e245ad4e0ca648e9de0dd", "61aa020431420dce8f53b74352a990fe", "bd2d8e0fd774e32f623e1fe5ad44781f", "511b530c8662f8df97eb97b3eefa0618", "d156a6d38e10efc30eda3cace7456537", "88130abfa702d8f53ac7be76e9d24a58", "91bd37f9cebf7b6ef9f72d7fd6148a81", "b54a4e3ab37de7e5f8094793afb8a699", "e05ff19bd33566173fd742d4b9831f1f", "5407e0ea5126420644b503c66153eb3c", "d045df54952043573bb6a94c374c8420", "258ee9087c5a5fe359ceb3aafff0dd76", "bc8f60f4cbde3d6c28974971b6880792"];
